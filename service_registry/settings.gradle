@@ -13,3 +13,6 @@ pluginManagement {
 	}
 }
 rootProject.name = 'service_registry'
+
+include 'library'
+include 'application'

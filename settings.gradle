@@ -3,3 +3,10 @@
  */
 
 rootProject.name = 'MicroservicesRepo'
+
+includeBuild "auth"
+includeBuild "cart"
+includeBuild "config-server"
+includeBuild "gateway"
+includeBuild "service_registry"
+
