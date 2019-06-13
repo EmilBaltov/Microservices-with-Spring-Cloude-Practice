@@ -10,13 +10,13 @@ public class JwtConfig {
     private String Uri;
 
     @Value("${security.jwt.header:Authorization}")
-    private String header;
+    private String header="Authorization";
 
     @Value("${security.jwt.prefix:Bearer }")
-    private String prefix;
+    private String prefix="Bearer ";
 
     @Value("${security.jwt.expiration:#{24*60*60}}")
-    private int expiration;
+    private int expiration=86400000;
 
     @Value("${security.jwt.secret:JwtSecretKey}")
     private String secretKey="SecretKey";
